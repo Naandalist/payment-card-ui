@@ -1,4 +1,4 @@
-package com.example.paymentcardui
+package com.naandalist.paymentcardui
 
 import io.flutter.embedding.android.FlutterActivity
 
