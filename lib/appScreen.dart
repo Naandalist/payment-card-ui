@@ -40,10 +40,10 @@ class AppScreenState extends State<AppScreen> {
                 child: TextFormField(
                   decoration: InputDecoration(
                     contentPadding: const EdgeInsets.all(15.0),
-                    icon: Icon(
-                      Icons.person,
-                      size: 40.0,
-                      color: Colors.grey,
+                    icon: Image.asset(
+                      'assets/img/verve.png',
+                      width: 40.0,
+                      // color: Colors.grey[600],
                     ),
                     border: UnderlineInputBorder(),
                     filled: true,
