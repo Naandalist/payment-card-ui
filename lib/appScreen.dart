@@ -47,7 +47,7 @@ class AppScreenState extends State<AppScreen> {
                     ),
                     border: UnderlineInputBorder(),
                     filled: true,
-                    hintText: 'e.g. Musa Adebola',
+                    hintText: '0000-0000-0000-0000-000',
                     labelText: 'Number',
                   ),
                 ),
@@ -64,7 +64,7 @@ class AppScreenState extends State<AppScreen> {
                     ),
                     border: UnderlineInputBorder(),
                     filled: true,
-                    hintText: 'e.g. Musa Adebola',
+                    hintText: '000',
                     labelText: 'CVV',
                   ),
                 ),
@@ -86,10 +86,31 @@ class AppScreenState extends State<AppScreen> {
                   ),
                 ),
               ),
+              Container(
+                alignment: Alignment.center,
+                margin: EdgeInsets.only(top: 20),
+                child: _payButton(),
+              )
             ],
           ),
         ),
       ),
+    );
+  }
+
+  Widget _payButton() {
+    return new FlatButton(
+      onPressed: () {},
+      color: Colors.blue,
+      textColor: Colors.white,
+      child: new Text(
+        'Pay',
+        style: const TextStyle(fontSize: 17.0, fontWeight: FontWeight.bold),
+      ),
+      shape: RoundedRectangleBorder(
+        borderRadius: const BorderRadius.all(const Radius.circular(10.0)),
+      ),
+      padding: const EdgeInsets.symmetric(vertical: 15.0, horizontal: 80.0),
     );
   }
 }
